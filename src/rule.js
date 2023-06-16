@@ -1,1 +1,3 @@
-module.exports = class Rule {}
+module.exports = class Rule {
+    input= {}
+}
