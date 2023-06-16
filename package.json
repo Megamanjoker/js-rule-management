@@ -1,0 +1,23 @@
+{
+  "name": "js-rule-management",
+  "version": "1.0.0",
+  "description": "This project is designed to be a easy to understand and lightweight js module for rule management",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megamanjoker/js-rule-management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Megamanjoker/js-rule-management/issues"
+  },
+  "homepage": "https://github.com/Megamanjoker/js-rule-management#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
