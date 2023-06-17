@@ -1,6 +1,6 @@
 {
   "name": "js-rule-management",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This project is designed to be a easy to understand and lightweight js module for rule management",
   "main": "index.js",
   "scripts": {
