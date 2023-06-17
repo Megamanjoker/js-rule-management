@@ -27,3 +27,5 @@ the rule management system will collect all the rules and display the results of
 ## When will the rule management system throw an error
 as of right now the only error that will be throw is if one of the rules fails.
 
+## What if I hand the rule management an object that is not a rule object
+the rule management system will treat that object as in input into a function that looks like this ()=>{}
