@@ -94,7 +94,7 @@ describe("This is to test the running all the rules",()=>{
             [()=>{},()=>{},()=>{},()=>{},()=>{},()=>{},()=>{throw new Error()},()=>{},()=>{},()=>{},()=>{},()=>{}],
             [()=>{},()=>{},()=>{},()=>{},()=>{},()=>{},()=>{},()=>{}]
         ].forEach((testData,index)=>{
-        test(index + " - Given an array of rules, when one of the scripts error, then store all the results in the object",()=>{
+        test(index + " - Given an array of rules, when one of the scripts could error, then store all the results in the object",()=>{
             const input = testData.map((value) => new Rule(undefined,value))
             const ruleManager = new RuleManager()
             const expectedOutput = testData.map(value => {
