@@ -1,5 +1,4 @@
-const Rule = require("../src/rule")
-const RuleManager = require("../src/rule-manager")
+const {Rule, RuleManager} = require("js-rule-management")
 
 test("Rule Manager should have a way to all runs to it programmatically",() => {
     const ruleManager = new RuleManager()
@@ -68,9 +67,8 @@ describe("This is to test the running all the rules",()=>{
         test("After adding a rule with the input "+testData+", when runRules should call all the inputs should be give to the script",()=>{
             const mockScript = jest.fn(()=>{});
             const mockRule = new Rule(testData,mockScript);
-            const input = [...Array(testData).keys()].map(() => mockRule)
             const ruleManager = new RuleManager()
-            ruleManager.push(input)
+            ruleManager.push(mockRule)
             ruleManager.runRules()
             expect(mockScript).toHaveBeenCalledWith(testData);
         })
