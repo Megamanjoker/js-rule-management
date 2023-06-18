@@ -8,3 +8,7 @@ test("Rule object should have an ruleScript field the should be a function",() =
     expect(new Rule().script).toBeInstanceOf(Function);
 })
 
+test("Rule object should have an ruleScript field the should be a function", () => {
+    expect(new Rule("").script).toBeInstanceOf(Function);
+})
+
