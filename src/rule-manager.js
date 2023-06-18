@@ -5,7 +5,7 @@ module.exports = class RuleManager extends Array {
         super.push(...items.flat().map((item)=>{
             const wrapperRule= new Rule();
             wrapperRule.input = item;
-            return item instanceof Rule ? item : wrapperRule;
+            return item.script ? item : wrapperRule;
         }))
     }
 
