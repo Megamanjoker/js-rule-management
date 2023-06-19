@@ -12,13 +12,13 @@ module.exports = class RuleManager extends Array {
   }
 
   runRules() {
-    this.results = this.map((rule) => {
+    return (this.results = this.map((rule) => {
       try {
         rule.script(rule.input);
         return "passed";
       } catch (e) {
         return e;
       }
-    });
+    }));
   }
 };
